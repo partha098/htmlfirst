@@ -1,0 +1,43 @@
+.abc{
+    color:#F00;
+}
+
+.content_img{
+	width: 150px;
+
+	float: left;
+	margin-right: 10px;
+
+}
+
+
+.menu{
+
+background: #000;
+width: 100%;
+padding: 0px;
+}
+
+.menu li{
+
+display: inline-block;
+
+}
+
+.menu li a{
+
+	color:#FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding: 15px;
+    display: inline-block;
+}
+
+.menu li a:hover{
+	background: #00F;
+}
+
+.active{
+	background: #33cc33;
+}
