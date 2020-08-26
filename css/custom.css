@@ -16,12 +16,21 @@
 background: #000;
 width: 100%;
 padding: 0px;
+-webkit-box-shadow: 5px 5px 5px 5px #8F8F8F;
+box-shadow: 5px 5px 5px 5px #8F8F8F;
+
+position: fixed;
+top:0;
+margin: 0px;
 }
 
 .menu li{
 
 display: inline-block;
 
+}
+.m{
+	list-style: none;
 }
 
 .menu li a{
@@ -40,4 +49,20 @@ display: inline-block;
 
 .active{
 	background: #33cc33;
+}
+
+
+.frmw{
+	width: 400px;
+	
+	margin: 80px auto;
+	-webkit-box-shadow: 5px 5px 5px 5px #8F8F8F;
+box-shadow: 5px 5px 5px 5px #8F8F8F;
+
+padding: 20px;
+
+background: #CCC;
+
+border-radius: 20px;
+
 }

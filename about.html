@@ -3,8 +3,10 @@
 <head>
 	<title>About us</title>
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
 </head>
 <body>
+
 
 
 <ul class="menu">
@@ -13,6 +15,83 @@
 	<li><a href="#">Service</a></li>
 	<li><a href="#">Contact</a></li>
 </ul>
+
+<div class="frmw">
+	<form action="" method="post">
+		<p>Name</p>
+		<p><input type="text" name="name" required="" placeholder="Enter your Name"></p>
+		<p>Email</p>
+		<p><input type="email" name="email" required="" placeholder="Enter Email"></p>
+		<p>Gender</p>
+		<p> <label> <input type="radio" name="gender" value="Male" required=""> Male  </label> </p>
+		<p><label> <input type="radio" name="gender" value="Female" required=""> Female </label> </p>
+		<p><label><input type="radio" name="gender" value="Others" required=""> Others</label> </p>
+
+		<p>country</p>
+		<p>
+			<select name="country" required="">
+				<option value="">-Select-</option>
+				<option value="India">India</option>
+				<option value="USA">USA</option>
+				<option value="UK">UK</option>
+				
+			</select>
+
+		</p>
+
+		 <p>Category</p>
+		<p>
+			<select name="cat">
+				<option value="">-Select-</option>
+				<optgroup label="Electronics">
+					<option value="Mobile">Mobile</option>
+					<option value="Laptop">Laptop</option>
+					
+				</optgroup>
+				<optgroup label="Men's Wear">
+					<option value="T-shirt">T-shirt</option>
+					<option value="Shirt">Shirt</option>
+					
+				</optgroup>
+				<optgroup label="Women's Wear">
+					<option value="Saree">Saree</option>
+					<option value="Kurti">Kurti</option>
+					
+				</optgroup>
+				
+
+
+
+
+			</select>
+		</p> 
+
+		<p>Date of Birth</p>
+		<p><input type="date" name="dob" required=""></p>
+
+		<p>Food</p>
+		<p><label><input type="checkbox" name="food[]" value="Rice"> Rice </label></p>
+		<p><label><input type="checkbox" name="food[]" value="Roti"> Roti </label></p>
+		<p><label><input type="checkbox" name="food[]" value="Egg"> Egg </label></p>
+		<p><label><input type="checkbox" name="food[]" value="Chiken"> Chiken </label></p>
+
+		<p>About Me</p>
+		<p><textarea name="am" ></textarea></p>
+
+
+		<p><input type="submit" name="save" value="Save"> <input type="reset" name="res" value="Cancel"></p>
+
+		
+	</form>
+
+
+	
+	
+</div>
+
+<script>
+	CKEDITOR.replace('am');
+</script>
 
 </body>
 </html>
